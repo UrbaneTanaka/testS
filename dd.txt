@@ -1,0 +1,8 @@
+pg_ctl status  #サーバーのステータス確認
+pg_ctl : no server running  #まだ起動していない
+
+pg_ctl -D /usr/local/var/postgres/ start  #サーバー起動指示
+&gt;&gt;server started
+
+pg_ctl status   #サーバーのステータス確認
+pg_ctl : server is running (PID : xxxxx)   # サーバーが起動した
